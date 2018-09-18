@@ -1,0 +1,14 @@
+{
+  "name": "hxnodejs-elastic-apm-node",
+  "url": "https://github.com/proletariatgames/hxnodejs-elastic-apm-node",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["nodejs", "elastic-apm-node", "elastic"],
+  "description": "Externs for the elastic-apm-node NPM module",
+  "releasenote": "Initial release",
+  "version": "1.12.0",
+  "contributors": ["Proletariat", "danogles", "waneck"],
+  "dependencies": {
+    "hxnodejs": ""
+  }
+}
