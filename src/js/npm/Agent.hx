@@ -12,8 +12,14 @@ extern class Agent {
   static function addFilter(fn:Dynamic->Dynamic):Void;
   static function setUserContext(context:Dynamic):Bool;
   static function setCustomContext(context:Dynamic):Bool;
+  // Deprecated in 2.10.0.
+  // Replaced by apm.setLabel(name, value)
   static function setTag(name:String, value:String):Bool;
+  static function setLabel(name:String, value:String):Bool;
+  // Deprecated in 2.10.0.
+  // Replaced by apm.addLabels({ [name]: value })
   static function addTags(tags:Dynamic):Bool;
+  static function addLabels(tags:Dynamic):Bool;
   static function captureError(error:Dynamic, ?options:CaptureErrorOptions, ?callback:Dynamic->Void):Void;
   static function startTransaction(?name:String, ?type:String):Transaction;
   static function endTransaction(?result:Int):Void;
