@@ -1,6 +1,6 @@
 package js.npm;
 import js.node.http.*;
-import js.Error;
+import js.lib.Error;
 
 @:jsRequire("elastic-apm-node")
 extern class Agent {
