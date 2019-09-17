@@ -1,6 +1,10 @@
 package js.npm;
 import js.node.http.*;
+#if haxe4
 import js.lib.Error;
+#else
+import js.Error;
+#end
 
 @:jsRequire("elastic-apm-node")
 extern class Agent {
@@ -14,11 +18,11 @@ extern class Agent {
   static function setCustomContext(context:Dynamic):Bool;
   // Deprecated in 2.10.0.
   // Replaced by apm.setLabel(name, value)
-  static function setTag(name:String, value:String):Bool;
+  @:deprecated("setTag was deprecated in 2.10.0. Please use setLabel instead") static function setTag(name:String, value:String):Bool;
   static function setLabel(name:String, value:String):Bool;
   // Deprecated in 2.10.0.
   // Replaced by apm.addLabels({ [name]: value })
-  static function addTags(tags:Dynamic):Bool;
+  @:deprecated("setTag was deprecated in 2.10.0. Please use addLabels instead") static function addTags(tags:Dynamic):Bool;
   static function addLabels(tags:Dynamic):Bool;
   static function captureError(error:Dynamic, ?options:CaptureErrorOptions, ?callback:Dynamic->Void):Void;
   static function startTransaction(?name:String, ?type:String):Transaction;
