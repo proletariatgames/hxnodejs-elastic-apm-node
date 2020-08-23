@@ -6,7 +6,7 @@
   "tags": ["nodejs", "elastic-apm-node", "elastic"],
   "description": "Externs for the elastic-apm-node NPM module",
   "releasenote": "Haxe 4 update",
-  "version": "2.16.2",
+  "version": "2.16.3",
   "contributors": ["Proletariat", "ProletariatDev1"],
   "dependencies": {
     "hxnodejs": ""

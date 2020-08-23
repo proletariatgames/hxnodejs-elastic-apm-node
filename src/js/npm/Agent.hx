@@ -14,6 +14,7 @@ extern class Agent {
   static function start(?options:StartOptions):Agent;
   static function isStarted():Bool;
   static function addFilter(fn:Dynamic->Dynamic):Void;
+  static function addSpanFilter(fn:Dynamic->Dynamic):Void;
   static function setUserContext(context:Dynamic):Bool;
   static function setCustomContext(context:Dynamic):Bool;
   // Deprecated in 2.10.0.
